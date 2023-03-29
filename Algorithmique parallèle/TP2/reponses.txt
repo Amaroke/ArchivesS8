@@ -1,0 +1,150 @@
+Exercice 1 :
+a)
+Je suis le processus 0 parmi 1
+
+Je suis le processus 1 parmi 2
+Je suis le processus 0 parmi 2
+
+Je suis le processus 1 parmi 4
+Je suis le processus 0 parmi 4
+Je suis le processus 2 parmi 4
+Je suis le processus 3 parmi 4
+
+Je suis le processus 0 parmi 8
+Je suis le processus 1 parmi 8
+Je suis le processus 2 parmi 8
+Je suis le processus 3 parmi 8
+Je suis le processus 4 parmi 8
+Je suis le processus 5 parmi 8
+Je suis le processus 6 parmi 8
+Je suis le processus 7 parmi 8
+
+b) C'est comme un processus.
+
+c) L'ordre diffère entre chaque éxecution.
+
+d) (cf. creation.c).
+
+Exercice 2 :
+
+a) 
+Le proc 12 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 1 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 13 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 5 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 11 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 10 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 2 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 9 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 14 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 15 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 6 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 7 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 0 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 3 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 8 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Le proc 4 traite 10000000 trapèzes de 0.000000 à 1.000000 et obtient 3.141592653552712
+Valeur de pi                     : 3.141592653552712
+Écart à la valeur standard de pi : 3.708e-11
+Calculée en                      : 0.165156s
+
+b)
+Le proc 1 traite 625000 trapèzes de 0.062500 à 0.125000 et obtient 0.248857703665831
+Le proc 3 traite 625000 trapèzes de 0.187500 à 0.250000 et obtient 0.243901430142833
+Le proc 5 traite 625000 trapèzes de 0.312500 à 0.375000 et obtient 0.234716149551881
+Le proc 10 traite 625000 trapèzes de 0.625000 à 0.687500 et obtient 0.188541046672757
+Le proc 4 traite 625000 trapèzes de 0.250000 à 0.312500 et obtient 0.239862579044528
+Le proc 14 traite 625000 trapèzes de 0.875000 à 0.937500 et obtient 0.105135896474137
+Le proc 9 traite 625000 trapèzes de 0.562500 à 0.625000 et obtient 0.201084224536969
+Le proc 7 traite 625000 trapèzes de 0.437500 à 0.500000 et obtient 0.220773656197689
+Le proc 12 traite 625000 trapèzes de 0.750000 à 0.812500 et obtient 0.155886711946903
+Le proc 0 traite 625000 trapèzes de 0.000000 à 0.062500 et obtient 0.249837144082605
+Le proc 2 traite 625000 trapèzes de 0.125000 à 0.187500 et obtient 0.246887150668818
+Le proc 13 traite 625000 trapèzes de 0.812500 à 0.875000 et obtient 0.133919128445262
+Le proc 11 traite 625000 trapèzes de 0.687500 à 0.750000 et obtient 0.173695849815617
+Le proc 6 traite 625000 trapèzes de 0.375000 à 0.437500 et obtient 0.228387141626853
+Le proc 15 traite 625000 trapèzes de 0.937500 à 1.000000 et obtient 0.058370017074124
+Le proc 8 traite 625000 trapèzes de 0.500000 à 0.562500 et obtient 0.211736823605812
+Valeur de pi                     : 0.249837144082605
+Écart à la valeur standard de pi : 2.892e+00
+Calculée en                      : 0.004648s
+
+c)
+Le proc 3 traite 625000 trapèzes de 0.187500 à 0.250000 et obtient 0.243901430142833
+Le proc 4 traite 625000 trapèzes de 0.250000 à 0.312500 et obtient 0.239862579044528
+Le proc 7 traite 625000 trapèzes de 0.437500 à 0.500000 et obtient 0.220773656197689
+Le proc 8 traite 625000 trapèzes de 0.500000 à 0.562500 et obtient 0.211736823605812
+Le proc 11 traite 625000 trapèzes de 0.687500 à 0.750000 et obtient 0.173695849815617
+Le proc 13 traite 625000 trapèzes de 0.812500 à 0.875000 et obtient 0.133919128445262
+Le proc 0 traite 625000 trapèzes de 0.000000 à 0.062500 et obtient 3.141592653552619
+Le proc 1 traite 625000 trapèzes de 0.062500 à 0.125000 et obtient 0.248857703665831
+Le proc 2 traite 625000 trapèzes de 0.125000 à 0.187500 et obtient 0.246887150668818
+Le proc 5 traite 625000 trapèzes de 0.312500 à 0.375000 et obtient 0.234716149551881
+Le proc 6 traite 625000 trapèzes de 0.375000 à 0.437500 et obtient 0.228387141626853
+Le proc 9 traite 625000 trapèzes de 0.562500 à 0.625000 et obtient 0.201084224536969
+Le proc 12 traite 625000 trapèzes de 0.750000 à 0.812500 et obtient 0.155886711946903
+Le proc 14 traite 625000 trapèzes de 0.875000 à 0.937500 et obtient 0.105135896474137
+Le proc 15 traite 625000 trapèzes de 0.937500 à 1.000000 et obtient 0.058370017074124
+Le proc 10 traite 625000 trapèzes de 0.625000 à 0.687500 et obtient 0.188541046672757
+Valeur de pi                     : 3.141592653552619
+Écart à la valeur standard de pi : 3.717e-11
+Calculée en                      : 0.067025s
+
+Exercice 3 :
+
+a)
+Taille du texte      : 10000
+Graine               : 1680083738
+Nb Procs MPI         : 16
+Taille des blocs MPI : 1000
+Génération du texte...terminée.
+Temps Séq : 0.000098 s
+Les résultats séquentiel et MPI sont DIFFÉRENTS :-/
+MPI :
+k =      309        0   3.09e-02
+l =      224        0   2.24e-02
+m =      242        0   2.42e-02
+n =      193        0   1.93e-02
+o =      203        0   2.03e-02
+p =      167        0   1.67e-02
+q =      221        0   2.21e-02
+r =      226        0   2.26e-02
+s =      192        0   1.92e-02
+t =      177        0   1.77e-02
+u =      199        0   1.99e-02
+v =      226        0   2.26e-02
+w =      224        0   2.24e-02
+x =      190        0   1.90e-02
+y =      159        0   1.59e-02
+z =      186        0   1.86e-02
+
+Taille du texte      : 1000000
+Graine               : 1680083777
+Nb Procs MPI         : 16
+Taille des blocs MPI : 1000
+Génération du texte...terminée.
+Temps Séq : 0.009781 s
+Les résultats séquentiel et MPI sont DIFFÉRENTS :-/
+MPI :
+        Temps        : 0.000001 s
+        Accélération : 9780.700000
+        Efficacité   : 652.046667
+m =    20836        0   2.08e-02
+n =    21216        0   2.12e-02
+o =    21079        0   2.11e-02
+p =    20973        0   2.10e-02
+q =    21241        0   2.12e-02
+r =    21211        0   2.12e-02
+s =    20929        0   2.09e-02
+t =    21275        0   2.13e-02
+u =    20737        0   2.07e-02
+v =    20918        0   2.09e-02
+w =    21153        0   2.12e-02
+x =    20934        0   2.09e-02
+y =    20968        0   2.10e-02
+z =    21151        0   2.12e-02
+
+Les caractères sont répartis équitablement, c'est juste plus long.
+
+b)
+
