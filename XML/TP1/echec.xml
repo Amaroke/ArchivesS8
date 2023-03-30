@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<echec xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="echec.xsd">
+
+
+    <piecesBlanches>
+        <piece>
+            <nom>roi</nom>
+
+            <position>
+                <colonne>G</colonne>
+
+                <ligne>1</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>fou</nom>
+
+            <position>
+                <colonne>D</colonne>
+
+                <ligne>6</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>tour</nom>
+
+            <position>
+                <colonne>E</colonne>
+
+                <ligne>1</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>pion</nom>
+
+            <position>
+                <colonne>A</colonne>
+
+                <ligne>4</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>pion</nom>
+
+            <position>
+                <colonne>B</colonne>
+
+                <ligne>3</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>pion</nom>
+
+            <position>
+                <colonne>C</colonne>
+
+                <ligne>2</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>pion</nom>
+
+            <position>
+                <colonne>F</colonne>
+
+                <ligne>2</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>pion</nom>
+
+            <position>
+                <colonne>G</colonne>
+
+                <ligne>2</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>pion</nom>
+
+            <position>
+                <colonne>H</colonne>
+
+                <ligne>5</ligne>
+            </position>
+        </piece>
+    </piecesBlanches>
+
+    <piecesNoires>
+        <piece>
+            <nom>roi</nom>
+
+            <position>
+                <colonne>B</colonne>
+
+                <ligne>6</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>reine</nom>
+
+            <position>
+                <colonne>A</colonne>
+
+                <ligne>7</ligne>
+            </position>
+        </piece>
+
+        <piece>
+            <nom>pion</nom>
+
+            <position>
+                <colonne>D</colonne>
+
+                <ligne>4</ligne>
+            </position>
+        </piece>
+    </piecesNoires>
+</echec>
+

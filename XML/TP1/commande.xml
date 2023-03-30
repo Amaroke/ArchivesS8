@@ -1,0 +1,63 @@
+<?xml version= "1.0" ?>
+<!DOCTYPE bon_commande [
+        <!ELEMENT bon_commande (emetteur|receveur|date|montant|commande)*>
+        <!ELEMENT emetteur (organisation)*>
+        <!ELEMENT organisation (nom|adresse|telephone|fax)*>
+        <!ELEMENT nom (#PCDATA)>
+        <!ELEMENT adresse (#PCDATA)>
+        <!ELEMENT telephone (#PCDATA)>
+        <!ELEMENT receveur (organisation)*>
+        <!ELEMENT fax (#PCDATA)>
+        <!ELEMENT date (#PCDATA)>
+        <!ELEMENT montant (#PCDATA)>
+        <!ELEMENT commande (intitule|quantite|prix_unitaire)*>
+        <!ATTLIST commande
+                ref_produit CDATA #REQUIRED>
+        <!ELEMENT intitule (#PCDATA)>
+        <!ELEMENT quantite (#PCDATA)>
+        <!ELEMENT prix_unitaire (#PCDATA)>
+        ]>
+<bon_commande>
+    <emetteur>
+        <organisation>
+            <nom>Tonmo</nom>
+
+            <adresse>32 rue des poulpes</adresse>
+
+            <telephone>00 00 00 00 00</telephone>
+        </organisation>
+    </emetteur>
+
+    <receveur>
+        <organisation>
+            <nom>Zeocto</nom>
+
+            <adresse>41 rue des pieuvres</adresse>
+
+            <telephone>11 11 11 11 11</telephone>
+
+            <fax>22 22 22 22 22</fax>
+        </organisation>
+    </receveur>
+
+    <date>10 Novembre 2004</date>
+
+    <montant>100 euros</montant>
+
+    <commande ref_produit="AX110">
+        <intitule>Ecrous de taille 36</intitule>
+
+        <quantite>4102</quantite>
+
+        <prix_unitaire>0.1</prix_unitaire>
+    </commande>
+
+    <commande ref_produit="toto32">
+        <intitule>Vis de taille 27</intitule>
+
+        <quantite>4500</quantite>
+
+        <prix_unitaire>0.2</prix_unitaire>
+    </commande>
+</bon_commande>
+

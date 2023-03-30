@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+    <xsd:element name="echec">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element type="piecesBlanchesType" name="piecesBlanches"/>
+                <xsd:element type="piecesNoiresType" name="piecesNoires"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+    <xsd:complexType name="piecesBlanchesType">
+        <xsd:sequence>
+            <xsd:element type="pieceType" name="piece" maxOccurs="16" minOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="piecesNoiresType">
+        <xsd:sequence>
+            <xsd:element type="pieceType" name="piece" maxOccurs="16" minOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="pieceType">
+        <xsd:sequence>
+            <xsd:element name="nom">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="roi"/>
+                        <xsd:enumeration value="fou"/>
+                        <xsd:enumeration value="tour"/>
+                        <xsd:enumeration value="pion"/>
+                        <xsd:enumeration value="reine"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element type="positionType" name="position"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+    <xsd:complexType name="positionType">
+        <xsd:sequence>
+            <xsd:element name="colonne">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="G"/>
+                        <xsd:enumeration value="D"/>
+                        <xsd:enumeration value="E"/>
+                        <xsd:enumeration value="A"/>
+                        <xsd:enumeration value="B"/>
+                        <xsd:enumeration value="C"/>
+                        <xsd:enumeration value="F"/>
+                        <xsd:enumeration value="H"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="ligne">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:enumeration value="1"/>
+                        <xsd:enumeration value="6"/>
+                        <xsd:enumeration value="4"/>
+                        <xsd:enumeration value="3"/>
+                        <xsd:enumeration value="2"/>
+                        <xsd:enumeration value="5"/>
+                        <xsd:enumeration value="7"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+</xsd:schema>

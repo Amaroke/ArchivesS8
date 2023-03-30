@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+
+    <xsd:element name="nomDeCouleur">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="piece" minOccurs="1" maxOccurs="16">
+                    <!-- Définition d'une pièce -->
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="nom" type="xsd:string"/>
+                            <xsd:element name="position">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="colonne" type="xsd:string"/>
+                                        <xsd:element name="ligne" type="xsd:integer"/>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
