@@ -194,9 +194,9 @@ return
 ### 16)
 
 ```
-for $livre in doc("livre.xml")//livre,
-    $emprunt in doc("emprunt.xml")//contenu,
-    $adherent in doc("adherent.xml")//membre
+for $livre in doc("livre.xml")//livre
+for $emprunt in doc("emprunt.xml")//contenu
+for $adherent in doc("adherent.xml")//membre
 where $livre/isbn = $emprunt/isbn and $adherent/code = $emprunt/code
 return <resultatrequete>
             <nom>{data($adherent/nom)}</nom>
@@ -220,9 +220,9 @@ return <resultatrequete>
 ### 17)
 
 ```
-for $a in doc("adherent.xml")//membre,
-    $e in doc("emprunt.xml")//contenu,
-    $l in doc("livre.xml")//livre
+for $a in doc("adherent.xml")//membre
+for $e in doc("emprunt.xml")//contenu
+for $l in doc("livre.xml")//livre
 where $a/code=$e/code and $e/isbn=$l/isbn
 return <resultatrequete>
            <nom>{data($a/nom)}</nom>
