@@ -1,0 +1,115 @@
+clear && make && mpirun --allow-run-as-root -n 4 -host localhost:4 ./minmax -c 10000 -l 10000 -t 4
+
+Exercice 1 :
+
+a) Voir le code, les résultats sont les mêmes.
+
+b) J'ai 4 cœurs physique.
+
+c) 
+
+Sur un tableau de 10000x10000
+1 Thread :
+    Temps        : 0.932135 s
+    Accélération : 0.647253
+    Efficacité   : 0.161813
+2 Thread : 
+    Temps        : 0.878317 s
+    Accélération : 0.639055
+    Efficacité   : 0.319527
+3 Threads :
+    Temps        : 0.489218 s
+    Accélération : 1.115672
+    Efficacité   : 0.278918
+4 Threads :
+    Temps        : 0.189929 s
+    Accélération : 2.531878
+    Efficacité   : 0.843959
+
+d)
+10000x10000 :
+    Temps        : 0.635690 s
+    Accélération : 1.141819
+    Efficacité   : 0.855459
+10000x20000 :
+    Temps        : 0.904644 s
+    Accélération : 1.145745
+    Efficacité   : 0.875745
+20000x20000 :
+    Temps        : 1.504644 s
+    Accélération : 1.189955
+    Efficacité   : 0.453775
+
+Exercice 2 :
+
+a) Voir le code, les résultats sont les mêmes.
+
+b)
+Sur un tableau de 10000x10000
+1 Thread :
+    Temps        : 0.342601 s
+    Accélération : 1.286937
+    Efficacité   : 1.286937
+2 Thread : 
+    Temps        : 0.181921 s
+    Accélération : 2.637326
+    Efficacité   : 1.318663
+3 Threads :
+    Temps        : 0.130748 s
+    Accélération : 3.989157
+    Efficacité   : 1.329719
+4 Threads :
+    Temps        : 0.134894 s
+    Accélération : 4.380871
+    Efficacité   : 1.095218
+
+c)
+10000x10000 :
+    Temps        : 0.142979 s
+    Accélération : 3.802829
+    Efficacité   : 0.950707
+10000x20000 :
+    Temps        : 0.238358 s
+    Accélération : 4.445444
+    Efficacité   : 1.111361
+20000x20000 :
+    Temps        : 0.564866 s
+    Accélération : 6.562135
+    Efficacité   : 1.456843
+
+Exercice 3 :
+
+a) Voir le code, les résultats sont les mêmes.
+
+b)
+Sur un tableau de 10000x10000
+1 Thread :
+    Temps        : 0.414338 s
+    Accélération : 1.043049
+    Efficacité   : 1.043049
+2 Thread : 
+    Temps        : 0.266488 s
+    Accélération : 1.818834
+    Efficacité   : 0.454709
+3 Threads :
+    Temps        : 0.235780 s
+    Accélération : 2.009033
+    Efficacité   : 0.223226
+4 Threads :
+    Temps        : 0.189058 s
+    Accélération : 2.745636
+    Efficacité   : 0.171602
+
+c)
+10000x10000 :
+    Temps        : 0.206785 s
+    Accélération : 2.661352
+    Efficacité   : 0.166334
+10000x20000 :
+    Temps        : 0.372621 s
+    Accélération : 2.979431
+    Efficacité   : 0.186214
+20000x20000 :
+    Temps        : 0.545278 s
+    Accélération : 2.782845
+    Efficacité   : 0.254785
