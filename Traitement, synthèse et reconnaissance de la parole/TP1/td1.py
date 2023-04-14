@@ -50,14 +50,65 @@ def afficher_signal_et_energie(valeurs_signal, nb_echantillon, energies):
     plt.show()
 
 
+def calculer_passage_zero(signal, m, n):
+    nb_fenetres = int((len(signal) - n) / m) + 1
+    moyenne = np.mean(signal)
+    taux_passage_zero = np.zeros(nb_fenetres)
+    if moyenne > 0:
+        signal = signal - moyenne
+    # Calculer le taux de passage par zéro de chaque fenêtre
+    for i in range(nb_fenetres):
+        debut_fenetre = i * m
+        fin_fenetre = debut_fenetre + n
+        fenetre = signal[debut_fenetre:fin_fenetre]
+        nb_passage = 0
+        # On compte le nombre de passages par zéro
+        for j in range(len(fenetre) - 1):
+            if fenetre[j] * fenetre[j + 1] < 0:
+                nb_passage += 1
+        taux_passage_zero[i] = nb_passage / n
+
+    return taux_passage_zero
+
+
+def afficher_signal_et_passage_zero(valeurs_signal, nb_echantillon, taux_passage_zero):
+    fig, (ax1, ax2) = plt.subplots(2, figsize=(20, 10))
+
+    # Signal
+    ax1.plot(valeurs_signal)
+    ax1.set_xlabel('Temps (echt)')
+    ax1.set_xlim(0, nb_echantillon)  # On limite entre 0 et le max
+
+    # Courbe passage à zéro
+    ax2.plot(taux_passage_zero)
+    ax2.set_ylabel('Taux de passage par zéro')
+    ax2.set_xlim(0, len(taux_passage_zero))  # On limite entre 0 et le max
+
+    plt.tight_layout()
+    plt.show()
+
+
+def windowcorrelation(sig1, sig2):
+    return np.sum(sig1 * sig2)
+
+
+def coeffautocorrelation(sig, L):
+    return windowcorrelation(sig, L) / windowcorrelation(sig, sig)
+
+
 # Ouverture du .wav
 frequence_enchantillonage, valeurs_signal, nb_echantillon = ouverture_wav()
 
+# Affichage du signal et de la courbe d'énergie
+"""
 m = int(frequence_enchantillonage * 0.004)  # 4 ms
 N = int(frequence_enchantillonage * 0.01)  # 10 ms
-
-# Calcule de l'énergie
+# Calcul de l'énergie
 energies = calculer_energie(valeurs_signal, m, N)
-
-# Affichage du signal et de la courbe d'énergie
 afficher_signal_et_energie(valeurs_signal, nb_echantillon, energies)
+afficher_signal_et_passage_zero(valeurs_signal, nb_echantillon, calculer_passage_zero(valeurs_signal, m, N))
+"""
+
+m = int(frequence_enchantillonage * 0.025)  # 25 ms
+N = int(frequence_enchantillonage * 0.004)  # 10 ms
+L = int(frequence_enchantillonage * 0.025)  # 25 ms
