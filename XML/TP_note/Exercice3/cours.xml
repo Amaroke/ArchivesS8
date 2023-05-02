@@ -1,0 +1,59 @@
+<cours>
+   <enseignement  id="P0023"  enseignant="dupont">
+      <titre>
+	  XML
+	  </titre>
+      <semestre>
+	  1
+	  </semestre>
+      <caractere>
+	  optionnelle
+	  </caractere>
+	  <ects>
+	  6
+	  </ects>
+	 </enseignement>
+   <enseignement  id="P0033"  enseignant="laurent">
+      <titre>
+	  BDD
+	  </titre>
+      <semestre>
+	  2
+	  </semestre>
+      <caractere>
+	  obligatoire
+	  </caractere>
+	  <ects>
+	  6
+	  </ects>
+	 </enseignement>
+   <enseignement  id="P0035"  enseignant="polo">
+      <titre>
+	  SYTEME 
+	  </titre>
+      <semestre>
+	  2
+	  </semestre>
+      <caractere>
+	  obligatoire
+	  </caractere>
+	  <ects>
+	 3
+	  </ects>
+	 </enseignement>
+	  <enseignement  id="P0678"  enseignant="pierre">
+      <titre>
+	  ARCHITECTURE
+	  </titre>
+      <semestre>
+	  2
+	  </semestre>
+      <caractere>
+	  optionnelle
+	  </caractere>
+	  <ects>
+	 3
+	  </ects>
+	 </enseignement>
+</cours>
+	 

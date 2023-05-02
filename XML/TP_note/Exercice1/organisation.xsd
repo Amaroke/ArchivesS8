@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Root" type="RootType"/>
+  <xsd:complexType name="FullAddressType">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="Address"/>
+      <xsd:element type="xsd:string" name="City"/>
+      <xsd:element type="xsd:string" name="Region"/>
+      <xsd:element type="xsd:string" name="PostalCode"/>
+      <xsd:element type="xsd:string" name="Country"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CustomerType">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="CompanyName"/>
+      <xsd:element type="xsd:string" name="ContactName"/>
+      <xsd:element type="xsd:string" name="ContactTitle"/>
+      <xsd:element type="xsd:string" name="Phone" maxOccurs="unbounded" minOccurs="0"/>
+      <xsd:element type="xsd:string" name="Fax" minOccurs="0"/>
+      <xsd:element type="FullAddressType" name="FullAddress"/>
+    </xsd:sequence>
+    <xsd:attribute type="xsd:string" name="CustomerID"/>
+  </xsd:complexType>
+  <xsd:complexType name="CustomersType">
+    <xsd:sequence>
+      <xsd:element type="CustomerType" name="Customer" maxOccurs="unbounded" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ShipInfoType">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="ShipVia"/>
+      <xsd:element type="xsd:string" name="Freight"/>
+      <xsd:element type="xsd:string" name="ShipName"/>
+      <xsd:element type="xsd:string" name="ShipAddress"/>
+      <xsd:element type="xsd:string" name="ShipCity"/>
+      <xsd:element type="xsd:string" name="ShipRegion" minOccurs="0"/>
+      <xsd:element type="xsd:string" name="ShipPostalCode"/>
+      <xsd:element type="xsd:string" name="ShipCountry"/>
+    </xsd:sequence>
+    <xsd:attribute type="xsd:string" name="ShippedDate"/>
+  </xsd:complexType>
+  <xsd:complexType name="OrderType">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="CustomerID"/>
+      <xsd:element type="xsd:string" name="EmployeeID"/>
+      <xsd:element type="xsd:string" name="OrderDate"/>
+      <xsd:element type="xsd:string" name="RequiredDate"/>
+      <xsd:element type="CommentType" name="Comment" minOccurs="0"/>
+      <xsd:element type="ShipInfoType" name="ShipInfo"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="CommentType">
+    <xsd:sequence>
+      <xsd:element type="pType" name="p"/>
+      <xsd:element type="ulType" minOccurs="0" name="ul"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="OrdersType">
+    <xsd:sequence>
+      <xsd:element type="OrderType" name="Order" maxOccurs="unbounded" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="RootType">
+    <xsd:sequence>
+      <xsd:element type="CustomersType" name="Customers"/>
+      <xsd:element type="OrdersType" name="Orders"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="pType" mixed="true">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="strong" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ulType">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="li" maxOccurs="unbounded" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
+

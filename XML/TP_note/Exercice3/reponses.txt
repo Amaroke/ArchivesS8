@@ -1,0 +1,108 @@
+1.
+Requête :
+for $enseignant in doc("Exercice3/enseignants.xml")//enseignant
+return <enseignant pos="{count($enseignant/preceding-sibling::*) + 1}">
+          {data($enseignant/nom)}
+       </enseignant>
+
+Réponse :
+<enseignant pos="1">
+	  dupont
+	  </enseignant>
+<enseignant pos="2">
+	  laurent
+	  </enseignant>
+<enseignant pos="3">
+	 polo
+	  </enseignant>
+<enseignant pos="4">
+	  pierre
+	  </enseignant>
+
+2.
+Requête :
+<html>
+  <ul>
+  {
+    for $cours in doc("Exercice3/cours.xml")/cours/enseignement
+    let $id := $cours/@id
+    order by $cours/titre
+    return <li>
+             <a href="{$id}.html">{data($cours/titre)}</a>
+           </li>
+  }
+  </ul>
+</html>
+
+Réponse :
+<html><ul><li><a href="P0678.html">
+	  ARCHITECTURE
+	  </a></li><li><a href="P0033.html">
+	  BDD
+	  </a></li><li><a href="P0035.html">
+	  SYTEME
+	  </a></li><li><a href="P0023.html">
+	  XML
+	  </a></li></ul></html>
+
+3.
+Requête :
+for $enseignant in doc("Exercice3/enseignants.xml")//enseignant
+order by upper-case($enseignant/nom), upper-case($enseignant/prenom)
+return <enseignant>
+         <nom>{upper-case($enseignant/nom)}</nom>
+         <prenom>{upper-case($enseignant/prenom)}</prenom>
+       </enseignant>
+
+Réponse :
+<enseignant><nom>
+	  DUPONT
+	  </nom><prenom>
+	  FABRICE
+	  </prenom></enseignant>
+<enseignant><nom>
+	  LAURENT
+	  </nom><prenom>
+	  LAURE
+	  </prenom></enseignant>
+<enseignant><nom>
+	  PIERRE
+	  </nom><prenom>
+	  ERWAN
+	  </prenom></enseignant>
+<enseignant><nom>
+	 POLO
+	  </nom><prenom>
+	  GERARD
+	  </prenom></enseignant>
+
+4.
+Requête :
+<cours>
+{
+  for $cours in doc("Exercice3/cours.xml")/cours/enseignement
+  let $id := $cours/@id
+  let $ects := $cours/ects
+  let $semestre := $cours/semestre
+  return
+    if ($semestre = 1) then
+      <s1 id="{$id}" ects="{$ects}">
+        {data($cours/titre)}
+      </s1>
+    else if ($semestre = 2) then
+      <s2 id="{$id}" ects="{$ects}">
+        {data($cours/titre)}
+      </s2>
+}
+</cours>
+
+Réponse :
+<cours><s1 id="P0023" ects="&#xA;&#x9;  6&#xA;&#x9;  ">
+	  XML
+	  </s1><s2 id="P0033" ects="&#xA;&#x9;  6&#xA;&#x9;  ">
+	  BDD
+	  </s2><s2 id="P0035" ects="&#xA;&#x9; 3&#xA;&#x9;  ">
+	  SYTEME
+	  </s2><s2 id="P0678" ects="&#xA;&#x9; 3&#xA;&#x9;  ">
+	  ARCHITECTURE
+	  </s2></cours>

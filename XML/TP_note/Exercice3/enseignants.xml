@@ -1,0 +1,58 @@
+<enseignants>
+   <enseignant  id="P0023">
+      <nom>
+	  dupont
+	  </nom>
+      <prenom>
+	  fabrice
+	  </prenom>
+      <statut>
+	  mcf
+	  </statut>
+	  <faculte>
+	  uhp
+	  </faculte>
+	 </enseignant>
+   <enseignant  id="P0033">
+      <nom>
+	  laurent
+	  </nom>
+      <prenom>
+	  laure
+	  </prenom>
+      <statut>
+	  prof
+	  </statut>
+	  <faculte>
+	  nancy2
+	  </faculte>
+	 </enseignant>
+  <enseignant  id="P0035">
+      <nom>
+	 polo
+	  </nom>
+      <prenom>
+	  gerard
+	  </prenom>
+      <statut>
+	  mcf
+	  </statut>
+	  <faculte>
+	  miage
+	  </faculte>
+	 </enseignant>
+	  <enseignant  id="P0678">
+      <nom>
+	  pierre
+	  </nom>
+      <prenom>
+	  erwan
+	  </prenom>
+      <statut>
+	  prof
+	  </statut>
+	  <faculte>
+	  esial
+	  </faculte>
+	 </enseignant>
+</enseignants>
