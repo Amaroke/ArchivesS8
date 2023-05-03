@@ -176,7 +176,7 @@ int main(int argc, char **argv)
   //
   // Barrière pour attendre que le processus 0 ait fini la version MPI
   //
-  MPI_Barrier(MPI_COMM_WORLD);
+    MPI_Barrier(MPI_COMM_WORLD);
 
   //
   // Calcul avec MPI multi-threads et récupération du résultat et du temps sur proc MPI 0
@@ -511,33 +511,32 @@ void minmaxMPIOMP(reel **tab, int L, int C, int numP, int nbP, int nbT, MinMax *
   }
 
   // Fusion des résultats dans le processus 0 avec send et recv
-  if (numP == 0) {
-    int ligne_min_local, ligne_max_local, colonne_min_local, colonne_max_local;
-    for (int i = 1; i < nbP; ++i) {
-      MPI_Recv(&ligne_min_local, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-      MPI_Recv(&colonne_min_local, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-      MPI_Recv(&ligne_max_local, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-      MPI_Recv(&colonne_max_local, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-      if (tab[ligne_min_local][colonne_min_local] < tab[ligne_min][colonne_min]) {
-        ligne_min = ligne_min_local;
-        colonne_min = colonne_min_local;
-      }
-      if (tab[ligne_max_local][colonne_max_local] > tab[ligne_max][colonne_max]) {
-        ligne_max = ligne_max_local;
-        colonne_max = colonne_max_local;
-      }
+    if (numP == 0) {
+        int ligne_min_local, ligne_max_local, colonne_min_local, colonne_max_local;
+        for (int i = 1; i < nbP; ++i) {
+        MPI_Recv(&ligne_min_local, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        MPI_Recv(&colonne_min_local, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        MPI_Recv(&ligne_max_local, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        MPI_Recv(&colonne_max_local, 1, MPI_INT, i, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        if (tab[ligne_min_local][colonne_min_local] < tab[ligne_min][colonne_min]) {
+            ligne_min = ligne_min_local;
+            colonne_min = colonne_min_local;
+        }
+        if (tab[ligne_max_local][colonne_max_local] > tab[ligne_max][colonne_max]) {
+            ligne_max = ligne_max_local;
+            colonne_max = colonne_max_local;
+        }
+        }
+        minmax->min.lig = ligne_min;
+        minmax->min.col = colonne_min;
+        minmax->max.lig = ligne_max;
+        minmax->max.col = colonne_max;
+    } else {
+        MPI_Send(&ligne_min, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
+        MPI_Send(&colonne_min, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
+        MPI_Send(&ligne_max, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
+        MPI_Send(&colonne_max, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
     }
-    minmax->min.lig = ligne_min;
-    minmax->min.col = colonne_min;
-    minmax->max.lig = ligne_max;
-    minmax->max.col = colonne_max;
-  } else {
-    MPI_Send(&ligne_min, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
-    MPI_Send(&colonne_min, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
-    MPI_Send(&ligne_max, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
-    MPI_Send(&colonne_max, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);
-  }  
-}
 
 //
 // Affichage d'un couple de positions min et max avec leurs valeurs respectives

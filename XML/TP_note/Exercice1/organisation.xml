@@ -1,7 +1,9 @@
 <!DOCTYPE Root [
-        <!ELEMENT Root (Customers|Orders)*><!ELEMENT Customers (Customer)*>
+        <!ELEMENT Root (Customers|Orders)*>
+        <!ELEMENT Customers (Customer)*>
         <!ELEMENT Customer (CompanyName|ContactName|ContactTitle|Phone|FullAddress|Fax)*>
-        <!ATTLIST Customer CustomerID CDATA #REQUIRED>
+        <!ATTLIST Customer
+                CustomerID CDATA #REQUIRED>
         <!ELEMENT CompanyName (#PCDATA)>
         <!ELEMENT ContactName (#PCDATA)>
         <!ELEMENT ContactTitle (#PCDATA)>
@@ -20,7 +22,8 @@
         <!ELEMENT OrderDate (#PCDATA)>
         <!ELEMENT RequiredDate (#PCDATA)>
         <!ELEMENT ShipInfo (ShipVia|Freight|ShipName|ShipAddress|ShipCity|ShipRegion|ShipPostalCode|ShipCountry)*>
-        <!ATTLIST ShipInfo ShippedDate CDATA #IMPLIED>
+        <!ATTLIST ShipInfo
+                ShippedDate CDATA #IMPLIED>
         <!ELEMENT ShipVia (#PCDATA)>
         <!ELEMENT Freight (#PCDATA)>
         <!ELEMENT ShipName (#PCDATA)>
@@ -31,10 +34,12 @@
         <!ELEMENT ShipCountry (#PCDATA)>
         <!ELEMENT Comment (p|ul)*>
         <!ELEMENT p (strong)*>
-        <!ATTLIST p xmlns CDATA #REQUIRED>
+        <!ATTLIST p
+                xmlns CDATA #REQUIRED>
         <!ELEMENT strong (#PCDATA)>
         <!ELEMENT ul (li)*>
-        <!ATTLIST ul xmlns CDATA #REQUIRED>
+        <!ATTLIST ul
+                xmlns CDATA #REQUIRED>
         <!ELEMENT li (#PCDATA)>
         ]>
 <Root>

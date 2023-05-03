@@ -1,0 +1,290 @@
+Résultats pour non_01 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2976
+Score minimum pour les fichiers de référence OUI : 0.2754
+Moyenne des scores pour les fichiers de référence NON : 0.2822
+Score minimum pour les fichiers de référence NON : 0.2513
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour non_02 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2130
+Score minimum pour les fichiers de référence OUI : 0.1909
+Moyenne des scores pour les fichiers de référence NON : 0.2053
+Score minimum pour les fichiers de référence NON : 0.0000
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour non_03 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2389
+Score minimum pour les fichiers de référence OUI : 0.2136
+Moyenne des scores pour les fichiers de référence NON : 0.2160
+Score minimum pour les fichiers de référence NON : 0.0000
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour non_04 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2229
+Score minimum pour les fichiers de référence OUI : 0.1934
+Moyenne des scores pour les fichiers de référence NON : 0.2019
+Score minimum pour les fichiers de référence NON : 0.0000
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour non_05 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.3031
+Score minimum pour les fichiers de référence OUI : 0.2802
+Moyenne des scores pour les fichiers de référence NON : 0.2563
+Score minimum pour les fichiers de référence NON : 0.0000
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour non_06 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2493
+Score minimum pour les fichiers de référence OUI : 0.2304
+Moyenne des scores pour les fichiers de référence NON : 0.2170
+Score minimum pour les fichiers de référence NON : 0.0000
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour non_07 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2240
+Score minimum pour les fichiers de référence OUI : 0.1947
+Moyenne des scores pour les fichiers de référence NON : 0.1993
+Score minimum pour les fichiers de référence NON : 0.0000
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour non_08 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2357
+Score minimum pour les fichiers de référence OUI : 0.2151
+Moyenne des scores pour les fichiers de référence NON : 0.2026
+Score minimum pour les fichiers de référence NON : 0.0000
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour oui_01 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2517
+Score minimum pour les fichiers de référence OUI : 0.0000
+Moyenne des scores pour les fichiers de référence NON : 0.2817
+Score minimum pour les fichiers de référence NON : 0.2519
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  OUI
+
+Résultats pour oui_02 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2195
+Score minimum pour les fichiers de référence OUI : 0.0000
+Moyenne des scores pour les fichiers de référence NON : 0.2523
+Score minimum pour les fichiers de référence NON : 0.2185
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  OUI
+
+Résultats pour oui_03 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2176
+Score minimum pour les fichiers de référence OUI : 0.0000
+Moyenne des scores pour les fichiers de référence NON : 0.2399
+Score minimum pour les fichiers de référence NON : 0.1934
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  OUI
+
+Résultats pour oui_04 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2121
+Score minimum pour les fichiers de référence OUI : 0.0000
+Moyenne des scores pour les fichiers de référence NON : 0.2328
+Score minimum pour les fichiers de référence NON : 0.1909
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  OUI
+
+Résultats pour oui_05 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2312
+Score minimum pour les fichiers de référence OUI : 0.0000
+Moyenne des scores pour les fichiers de référence NON : 0.2720
+Score minimum pour les fichiers de référence NON : 0.2216
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  OUI
+
+Résultats pour oui_06 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2089
+Score minimum pour les fichiers de référence OUI : 0.0000
+Moyenne des scores pour les fichiers de référence NON : 0.2393
+Score minimum pour les fichiers de référence NON : 0.2089
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  OUI
+
+Résultats pour oui_07 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2200
+Score minimum pour les fichiers de référence OUI : 0.0000
+Moyenne des scores pour les fichiers de référence NON : 0.2404
+Score minimum pour les fichiers de référence NON : 0.2001
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  OUI
+
+Résultats pour oui_08 :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2083
+Score minimum pour les fichiers de référence OUI : 0.0000
+Moyenne des scores pour les fichiers de référence NON : 0.2262
+Score minimum pour les fichiers de référence NON : 0.1944
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  OUI
+
+Résultats pour oui_hugo :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2080
+Score minimum pour les fichiers de référence OUI : 0.1870
+Moyenne des scores pour les fichiers de référence NON : 0.2085
+Score minimum pour les fichiers de référence NON : 0.1724
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  OUI
+
+Résultats pour non_hugo :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2758
+Score minimum pour les fichiers de référence OUI : 0.2506
+Moyenne des scores pour les fichiers de référence NON : 0.2684
+Score minimum pour les fichiers de référence NON : 0.2416
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour nuit_hugo :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2231
+Score minimum pour les fichiers de référence OUI : 0.2069
+Moyenne des scores pour les fichiers de référence NON : 0.2265
+Score minimum pour les fichiers de référence NON : 0.1892
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  OUI
+
+Résultats pour buis_hugo :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2341
+Score minimum pour les fichiers de référence OUI : 0.2083
+Moyenne des scores pour les fichiers de référence NON : 0.2312
+Score minimum pour les fichiers de référence NON : 0.1928
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour bon_hugo :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2969
+Score minimum pour les fichiers de référence OUI : 0.2755
+Moyenne des scores pour les fichiers de référence NON : 0.2971
+Score minimum pour les fichiers de référence NON : 0.2631
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  OUI
+
+Résultats pour don_hugo :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2206
+Score minimum pour les fichiers de référence OUI : 0.1967
+Moyenne des scores pour les fichiers de référence NON : 0.2181
+Score minimum pour les fichiers de référence NON : 0.1932
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour zero_hugo :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2233
+Score minimum pour les fichiers de référence OUI : 0.1934
+Moyenne des scores pour les fichiers de référence NON : 0.2208
+Score minimum pour les fichiers de référence NON : 0.1863
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour un_hugo :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2378
+Score minimum pour les fichiers de référence OUI : 0.2158
+Moyenne des scores pour les fichiers de référence NON : 0.2352
+Score minimum pour les fichiers de référence NON : 0.1985
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour oui_guillaume :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2219
+Score minimum pour les fichiers de référence OUI : 0.1936
+Moyenne des scores pour les fichiers de référence NON : 0.2174
+Score minimum pour les fichiers de référence NON : 0.1853
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour non_guillaume :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2636
+Score minimum pour les fichiers de référence OUI : 0.2342
+Moyenne des scores pour les fichiers de référence NON : 0.2578
+Score minimum pour les fichiers de référence NON : 0.2247
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour nuit_guillaume :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2204
+Score minimum pour les fichiers de référence OUI : 0.1974
+Moyenne des scores pour les fichiers de référence NON : 0.2130
+Score minimum pour les fichiers de référence NON : 0.1726
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour buis_guillaume :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2485
+Score minimum pour les fichiers de référence OUI : 0.2101
+Moyenne des scores pour les fichiers de référence NON : 0.2477
+Score minimum pour les fichiers de référence NON : 0.2190
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  NON
+
+Résultats pour bon_guillaume :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2684
+Score minimum pour les fichiers de référence OUI : 0.2380
+Moyenne des scores pour les fichiers de référence NON : 0.2705
+Score minimum pour les fichiers de référence NON : 0.2355
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  OUI
+
+Résultats pour don_guillaume :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2264
+Score minimum pour les fichiers de référence OUI : 0.1990
+Moyenne des scores pour les fichiers de référence NON : 0.2143
+Score minimum pour les fichiers de référence NON : 0.1957
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour zero_guillaume :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2218
+Score minimum pour les fichiers de référence OUI : 0.2044
+Moyenne des scores pour les fichiers de référence NON : 0.2195
+Score minimum pour les fichiers de référence NON : 0.1911
+Résultat du test avec minimum :  NON
+Résultat du test avec moyenne :  NON
+
+Résultats pour un_guillaume :
+
+Moyenne des scores pour les fichiers de référence OUI : 0.2490
+Score minimum pour les fichiers de référence OUI : 0.2111
+Moyenne des scores pour les fichiers de référence NON : 0.2468
+Score minimum pour les fichiers de référence NON : 0.2159
+Résultat du test avec minimum :  OUI
+Résultat du test avec moyenne :  NON
+
+
+Process finished with exit code 0
