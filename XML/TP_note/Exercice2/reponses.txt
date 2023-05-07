@@ -8,9 +8,8 @@ Réponse :
 
 2.
 Requête :
-let $doc := doc("Exercice2/organisation.xml")
-for $c in distinct-values($doc/Root/Customers/Customer/FullAddress/Country | $doc/Root/Orders/Order/ShipInfo/ShipCountry)
-return $c
+distinct-values(/Root/Customers/Customer/FullAddress/Country | /Root/Orders/Order/ShipInfo/ShipCountry)
+
 
 Réponse :
 USA
@@ -19,9 +18,9 @@ Italy
 
 3.
 Requête :
-let $doc := doc("Exercice2/organisation.xml")
-for $c in $doc/Root/Orders/Order[CustomerID = $doc/Root/Customers/Customer[FullAddress/Region = 'CA']/@CustomerID]
-return $c
+
+/Root/Orders/Order[CustomerID = /Root/Customers/Customer[FullAddress/Region = 'CA']/@CustomerID]
+
 
 Réponse :
 <Order><CustomerID>LETSS</CustomerID><EmployeeID>1</EmployeeID><OrderDate>1997-06-25T00:00:00</OrderDate><RequiredDate>1997-07-23T00:00:00</RequiredDate><ShipInfo ShippedDate="1997-07-04T00:00:00"><ShipVia>2</ShipVia><Freight>13.73</Freight><ShipName>Let's Stop N Shop</ShipName><ShipAddress>87 Polk St. Suite 5</ShipAddress><ShipCity>San Francisco</ShipCity><ShipRegion>CA</ShipRegion><ShipPostalCode>94117</ShipPostalCode><ShipCountry>USA</ShipCountry></ShipInfo></Order>
@@ -32,9 +31,8 @@ Réponse :
 
 4.
 Requête :
-let $doc := doc("Exercice2/organisation.xml")
-for $c in $doc/Root/Customers/Customer[@CustomerID = 'HUNGC']/FullAddress/Country
-return $c
+
+/Root/Customers/Customer[@CustomerID = 'HUNGC']/FullAddress/Country
 
 
 Réponse :
